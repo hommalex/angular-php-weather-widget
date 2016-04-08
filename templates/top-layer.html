@@ -1,0 +1,13 @@
+	
+	<select name="weather_app_sel" id="weather_app_sel">
+		<option ng-repeat="weathers in weather" value=" {{ weather.name }} "> {{ weather.name }} </option>
+	</select>
+	<h1 class="title1"> {{ title }} </h1>
+	<h2 class="title2"> {{ weatherDesc }} </h2>
+	<div class="left left1">
+		<span class="wi {{ img }}"></span>
+	</div>
+	<div class="left left2">
+		<div class="left2div"> <p class="temp1">{{ temp_C }}&deg;</p> <p class="temp3"> <strong>Humidity</strong> {{ humidity }}%</p> </div>
+		<div class="left2div"> <p class="temp2">{{ temp_F }}<sup>f</sup> </p> <p class="temp4"> <strong>Wind</strong> {{ windspeedKmph }} Kph</p> </div>
+	</div>
